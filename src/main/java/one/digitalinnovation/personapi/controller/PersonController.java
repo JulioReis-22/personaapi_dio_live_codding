@@ -25,7 +25,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/people")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
-
+@SpringBootApplication(scanBasePackages = "one.digitalinnovation.personapi.controller")
 public class PersonController {
 
     private PersonService personService;
